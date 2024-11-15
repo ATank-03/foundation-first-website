@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <title>Foundation Dashboard</title>
+
+    <link href="stylesheets/pizza.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/vendor/snap.svg.js"></script>
+    <script src="js/jquery.pizza.js"></script>
+</head>
+
+<body>
+    <div class="app-dashboard shrink-medium">
+        <div class="row expanded app-dashboard-top-nav-bar">
+            <div class="columns medium-3">
+                <button data-toggle="app-dashboard-sidebar" class="menu-icon hide-for-medium"></button>
+                <a class="app-dashboard-logo">Bit Academy</a>
+            </div>
+            <div class="columns show-for-medium">
+                <div class="app-dashboard-search-bar-container">
+                    <input class="app-dashboard-search" type="search" placeholder="Search">
+                    <i class="app-dashboard-search-icon fa fa-search"></i>
+                </div>
+            </div>
+        </div>
+        <div class="app-dashboard-body off-canvas-wrapper">
+            <div id="app-dashboard-sidebar"
+                class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium"
+                data-off-canvas>
+                <div class="app-dashboard-sidebar-title-area">
+                    <div class="app-dashboard-close-sidebar">
+                        <h3 class="app-dashboard-sidebar-block-title">The Dashboard</h3>
+                    </div>
+                </div>
+                <div class="app-dashboard-sidebar-inner">
+                    <ul class="menu vertical">
+                        <li><a href="#" class="is-active">
+                                <i class="large fa fa-house"></i><span class="app-dashboard-sidebar-text">Home</span>
+                            </a></li>
+                        <li><a>
+                                <i class="large fa fa-book"></i><span class="app-dashboard-sidebar-text">
+                                    Materiaal</span>
+                            </a></li>
+                        <li><a>
+                                <i class="large fa fa-chalkboard"></i><span
+                                    class="app-dashboard-sidebar-text">Classes</span>
+                            </a></li>
+                        <li><a>
+                                <i class="large fa fa-chart-pie"></i><span
+                                    class="app-dashboard-sidebar-text bg">Statistics</span>
+                            </a></li>
+                        <li><a>
+                                <i class="large fa fa-industry"></i><span
+                                    class="app-dashboard-sidebar-text">Tests</span>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
+                <h2 class="text-center">Statistics</h2>
+
+                <div class="translucent-form-overlay">
+                    <form>
+                        <h3>Search for Properties</h3>
+                        <div class="row columns">
+                            <label>Keyword
+                                <input type="text" name="keyword" placeholder="topic">
+                            </label>
+                        </div>
+                        <div class="row columns">
+                            <label>Property Status
+                                <select name="status" type="text">
+                                    <option>interactable</option>
+                                    <option>static</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="row columns">
+                            <label>Property Type
+                                <select name="status" type="text">
+                                    <option>Bar-graph</option>
+                                    <option>Pi-chart</option>
+                                    <option>other</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="row columns">
+                            <label>Location
+                                <input type="text" name="location" placeholder="Any">
+                            </label>
+                        </div>
+
+                        <button type="button" class="primary button expanded search-button">
+                            add
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <a href="index.html">
+        <div class="button">go back</div>
+    </a>
+</body>
+
+</html>
